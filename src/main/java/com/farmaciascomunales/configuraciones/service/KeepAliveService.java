@@ -13,7 +13,7 @@ public class KeepAliveService {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    @Scheduled(fixedRate = 120000) // cada 4 minutos (240,000 milisegundos)
+    @Scheduled(fixedRate = 40000) // cada 4 minutos (240,000 milisegundos)
     public void keepDatabaseAlive() {
         try {
             jdbcTemplate.queryForObject("SELECT 1", Integer.class);
