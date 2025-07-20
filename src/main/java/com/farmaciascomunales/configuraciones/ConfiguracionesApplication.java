@@ -1,3 +1,5 @@
+package com.farmaciascomunales.configuraciones;
+
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
